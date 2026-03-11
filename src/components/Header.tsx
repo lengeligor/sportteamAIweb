@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
@@ -15,7 +16,7 @@ export function Header() {
       <header className="header" id="main-header">
         <div className="header-inner">
           <Link href="/" className="header-logo" id="logo-link">
-            <div className="header-logo-icon">ŠK</div>
+            <Image src="/logo.png" alt="ŠK Sačurov" width={44} height={52} className="header-logo-img" priority />
             <span className="header-logo-text">ŠK Sačurov</span>
           </Link>
 
@@ -43,6 +44,9 @@ export function Header() {
             </Link>
             <Link href="/partneri" className={`nav-link ${isActive('/partneri') ? 'active' : ''}`}>
               Partneri
+            </Link>
+            <Link href="/fotogaleria" className={`nav-link ${isActive('/fotogaleria') ? 'active' : ''}`}>
+              Fotogaléria
             </Link>
             <Link href="/kontakt" className={`nav-link ${isActive('/kontakt') ? 'active' : ''}`}>
               Kontakt
@@ -78,6 +82,7 @@ export function Header() {
         <Link href="/novinky" onClick={() => setMobileOpen(false)}>Novinky</Link>
         <Link href="/o-klube" onClick={() => setMobileOpen(false)}>O klube</Link>
         <Link href="/partneri" onClick={() => setMobileOpen(false)}>Partneri</Link>
+        <Link href="/fotogaleria" onClick={() => setMobileOpen(false)}>Fotogaléria</Link>
         <Link href="/kontakt" onClick={() => setMobileOpen(false)}>Kontakt</Link>
       </nav>
     </>

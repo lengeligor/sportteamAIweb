@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
         <div className="footer-grid">
           <div>
             <div className="footer-brand">
-              <div className="header-logo-icon">ŠK</div>
+              <Image src="/logo.png" alt="ŠK Sačurov" width={36} height={42} className="header-logo-img" />
               <span className="header-logo-text">ŠK Sačurov</span>
             </div>
             <p className="footer-description">
@@ -30,6 +31,7 @@ export function Footer() {
               <li><Link href="/novinky">Novinky</Link></li>
               <li><Link href="/o-klube">O klube</Link></li>
               <li><Link href="/partneri">Partneri</Link></li>
+              <li><Link href="/fotogaleria">Fotogaléria</Link></li>
               <li><Link href="/kontakt">Kontakt</Link></li>
             </ul>
           </div>

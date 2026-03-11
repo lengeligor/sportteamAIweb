@@ -63,7 +63,7 @@ export default function KontaktPage() {
 
           <div className="map-container mt-4">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.5!2d21.65!3d48.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473eea1234567890%3A0x1234567890abcdef!2sSa%C4%8Durov!5e0!3m2!1ssk!2ssk!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600!2d21.6969!3d48.8249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee3e4b5c6d7e8%3A0x9a8b7c6d5e4f3a2b!2sDargovsk%C3%A1%20351%2C%20094%2013%20Sa%C4%8Durov!5e0!3m2!1ssk!2ssk!4v1710000000000"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
